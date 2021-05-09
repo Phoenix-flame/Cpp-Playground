@@ -18,7 +18,7 @@ public:
 		m_Callback = callback;
 	}
 	void Run(){
-		(m_Callback)({5, 10});
+		m_Callback({5, 10});
 	}
 private:
 	std::function<void(const Event& e)> m_Callback;

@@ -13,6 +13,7 @@ struct test{
 
 
 int main(){
+	print("alireza" << 5);
 	test *t1 = new test();
 	*((uint8_t*)t1 + OFFSETOF(test, a1)) = 5; 
 	print(t1->a1);
